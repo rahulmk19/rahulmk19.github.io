@@ -17,21 +17,21 @@
 </head>
 <body>
     <div>
-        <div class="container">
+        <div class="container" id="nav-menu">
             <nav>
                 <img src="" class="">
                 <ul>
                     <li><a class="nav-link home" href="#home">Home</a></li>
                     <li><a class="nav-link about" href="#about">About</a></li>
                     <li><a class="nav-link skills" href="#skills">Skills</a></li>
-                    <li><a class="nav-link project" href="#project">Project</a></li>
+                    <li><a class="nav-link.projects" href="#project">Project</a></li>
                     <li><a class="nav-link contact" href="#contact">Contact</a></li>
                     <li><a class="nav-link resume" id="resume-button-1" href="./Data/Rahul_Kumar Thakur_Resume.pdf" download="">Resume</a></li>
                 </ul>
             </nav>
             <div class="header-text">
                 <h2>Java Backend Developer</h2>
-                <h1>Hi, <span>I'm </span><br> Rahul Kumar Thakur</h1>
+                <h1 id="user-detail-name">Hi, <span>I'm </span><br> Rahul Kumar Thakur</h1>
 
             </div>
         </div>
@@ -43,11 +43,11 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./Data/Rahul.png.jpg">
+                    <img class="home-img" src="./Data/Rahul.png.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>An Aspiring Java Backend Development with 1200 hours
+                    <p id="user-detail-intro">An Aspiring Java Backend Development with 1200 hours
                         of practical coding experience, strongly passionate
                         about new technologies. Collaborative team player
                         proficient in building efficient software solutions. He has
@@ -87,7 +87,7 @@
     
 <!-- ------------------------------------------Skills--------------------------------------------- -->
 
-<div id="skills">
+<div id="skills" class="skills-card">
     <div class="container">
         <h1 class="sub-title">Skills</h1>
         <div class="services-list">
@@ -137,11 +137,11 @@
 
 
 <!-- -----------------------------------Project----------------------------------------------------- -->
-<div id="project">
+<div id="project" class="project-card">
     <div class="container">
         <h1 class="sub-title">My Project</h1>
         <div class="work-list">
-            <div class="work">
+            <div class="work project-card">
                 <img src="./Data/Health cart logop.png">
                 <div class="layer">
                     <h3>HeathKart</h3>
@@ -151,7 +151,7 @@
                     <a href="https://merry-cajeta-c250f2.netlify.app/index.html" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work project-card">
                 <img src="./Data/Tripoto logo.png">
                 <div class="layer">
                     <h3>Tripoto</h3>
@@ -161,7 +161,7 @@
                     <a href="https://marvelous-biscotti-e90580.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work project-card">
                 <img src="./Data/Health cart logop.png">
                 <div class="layer">
                     <h3>HeathKart</h3>
@@ -171,9 +171,9 @@
                     <a href="https://merry-cajeta-c250f2.netlify.app/index.html" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
                 </div>
             </div>
-            <div class="work">
+            <div class="work project-card">
                 <img src="./Data/Tripoto logo.png">
-                <div class="layer">
+                <div class="layer" >
                     <h3>Tripoto</h3>
                     <p>India's Largest Travel Community Website for booking hotels in the whole world.</p>
                     <h3 class="project-tech-stack">HTML | CSS | JavaScript</h3>
@@ -201,9 +201,9 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>   rahulmk.94802@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>  +91 7667869850</p>
-                <div class="social-icons">
+                <p id="contact-email"><i class="fa-solid fa-envelope"></i>   rahulmk.94802@gmail.com</p>
+                <p id="contact-phone"><i class="fa-solid fa-phone"></i>  +91 7667869850</p>
+                <div class="social-icons" id="contact-github">
                     <a href="https://github.com/rahulmk19"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/rahulmk19/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
@@ -235,7 +235,7 @@
     </div>
     
     
-    <div id="githubstats">
+    <div id="githubstats" class="react-activity-calendar">
         <div>
           <img id="github-stats-card"
           src="https://github-readme-stats.vercel.app/api?username=rahulmk19&show_icons=true&theme=merko"
