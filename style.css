@@ -63,7 +63,9 @@
   .header-text h1 span{
     color: #ff004f;
   }
-
+  .container h3.namename {
+    margin-left: 400px;
+  }
   /* ------------------About----------------------------------------- */
 
   #about.about.section{
@@ -348,7 +350,92 @@
   }
 
   
+/* ------***********-----------Renponsive*------------------*-------- */
 
+nav .fas{
+  display: none;
+}
+@media only screen and (max-width:600px){
   
+  nav .fas{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .container h3.namename {
+    margin-left: 350px;
+  }
   
+
+  /* ------------------------******----------------- */
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    margin-bottom: 14px;
+  }
+  .sub-title{
+    font-size: 40px;
+  }
+  .tab-links{
+    margin-right: 20px;
+    font-size: 16px;
+  }
   
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+  .github{
+    width: 100%;
+    margin-left: 0px;
+  }
+  #githubstats{
+    display: flex;
+    flex-direction: column;
+  }
+  #githubstats>div:nth-child(1){
+    width: 100%;
+  }
+  #githubstats>div:nth-child(2){
+    width: 100%;
+  }
+  #githubstats>div:nth-child(3){
+    width: 100%;
+  }
+  #githubstats>div:nth-child(1)>img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  #githubstats>div:nth-child(2)>img{
+    width: 100%;
+    height: auto;
+    
+  }
+  #githubstats>div:nth-child(3)>img{
+    width: 100%;
+    height: auto;
+  }
+}
