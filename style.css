@@ -381,12 +381,15 @@ nav .fas{
     left: 25px;
     cursor: pointer;
   }
-  .container h3.namename {
+  /* .container h3.namename {
     margin-left: 350px;
+  } */
+  .container .imgimg {
+    margin-right: 350px;
   }
-  
 
   /* ------------------------******----------------- */
+
   .about-col-1, .about-col-2{
     flex-basis: 100%;
   }
