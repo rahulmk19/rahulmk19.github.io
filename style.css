@@ -406,7 +406,7 @@
   }
  
  
-  #resume-button-2 {
+  #resume-link-2 {
     display: inline-block;
     background-color: #ff5252;
     color: #fff;
@@ -417,12 +417,12 @@
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
  
-  #resume-button-2:hover {
+  #resume-link-2:hover {
     background-color: #ff1744;
     transform: scale(1.1);
   }
  
-  #resume-button-2:active {
+  #resume-link-2:active {
     background-color: #e53935;
     transform: scale(0.9);
   }
