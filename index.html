@@ -1,272 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/responsive.css">
-
-    <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/image/favicon_io/favicon-32x32.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+
+    <!-- <link rel="stylesheet" href="Style.css/index.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
+
 <body>
-    <div>
-        <div class="container" id="nav-menu">
-            <nav>
-                <img src="./Data/Rahul.png.jpg" class="img"><span><h3 class="namename">Rahul Kumar Thakur</h3></span>
-                
-                <ul id="sidemenu">
-                    <li><a class="nav-link home"  id="home" href="#home">Home</a></li>
-                    <li><a class="nav-link about" href="#about">About</a></li>
-                    <li><a class="nav-link skills" href="#skills">Skills</a></li>
-                    <li><a class="nav-link.projects" href="#projects">Project</a></li>
-                    <li><a class="nav-link contact" href="#contact">Contact</a></li>
-                    <li><a class="nav-link resume" id="resume-button-1" href="./Data/Rahul_Kumar Thakur_Resume.pdf" download="">Resume</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h2>Java Backend Developer</h2>
-                <h1 id="user-detail-name">Hi, <span>I'm </span><br> Rahul Kumar Thakur</h1>
 
+    <nav id="nav-menu" class="navbar navbar-expand-md navbar-light bg-light">
+
+
+        <!-- Theme Toggle Switch -->
+        <label id="switch" class="switch">
+            <input type="checkbox" id="theme-toggle-btn" checked>
+            <span class="slider round"></span>
+          </label>
+          
+
+
+        <!-- Navbar Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link home" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link about" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link skills" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link projects" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link contact" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link resume" id="resume-button-1" href="Rahul_Kumar Thakur_Resume.pdf"
+                        download target="_blank"
+                        onclick="setTimeout(function(){ window.open('//drive.google.com/drive/folders/1fq4Z0LEE0wQWK7IHMdOc7D1xyZ7GIvfa'); }, 100);">Resume</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Include the jQuery and Bootstrap JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- ================================== Home Section ======================================= -->
+
+    <section class="home section" id="home">
+
+        <div class="homediv">
+            <div class="user-detail">
+                <!-- User Details -->
+                <p id="user-detail-name">👋Hey, <br>
+                    I'm Rahul Kumar Thakur</p>
+                <p id="user-detail-in">Full Stack Java Developer.</p>
+                <!-- Download Resume Button -->
+                <a id="resume-button-2" href="Rahul_Kumar Thakur_Resume.pdf" download target="_blank"
+                    onclick="setTimeout(function(){ window.open('//drive.google.com/drive/folders/1fq4Z0LEE0wQWK7IHMdOc7D1xyZ7GIvfa'); }, 100);">Download
+                    Resume</a>
+            </div>
+            <!-- User Image -->
+            <div class="image-container">
+                <img class="home-img" src="Images/Rahul.png.jpg" alt="">
             </div>
         </div>
-    </div>
 
-    <!-- -----------------------------About--------------------------------- -->
+    </section>
 
-    <div id="about.about.section" class="about section">
-        <div class="container" id="#about">
-            <div class="row">
-                <div class="about-col-1">
-                    <img class="home-img" src="./Data/Rahul.png.jpg">
+
+    <!-- ================================== About Section ================================= -->
+
+    <section id="about" class="about section">
+        <!-- About Section Heading -->
+        <h2>📝About</h2>
+        <div class="aboutdiv">
+            <div class="aboutimg">
+                <!-- About Image -->
+                <img src="https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/clc19iqf9016bp6wd8gi8rbuo_1/public" alt="">
+            </div>
+
+            <div class="about_intro">
+                <!-- About Introduction -->
+                <h1 id="myText">😊 Know Me</h1>
+                <p id="user-detail-intro">
+                    An Aspiring Java Backend Development with 1200 hours of practical coding experience, strongly passionate
+                     about new technologies. Collaborative team player proficient in building efficient software solutions. 
+                     He has excited to pursue his career by joining the company as a java developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Get the element that displays the changing text
+        var textElement = document.getElementById("myText");
+        // Define an array of texts to cycle through
+        var texts = [
+            "👩‍💻 Rahul Kumar Thakur",
+            "📣Communicator",
+            "☕ Java Developer",
+            // Add more texts here
+        ];
+        var index = 0;
+        // Function to change the text
+        function changeText() {
+            textElement.textContent = texts[index];
+            index = (index + 1) % texts.length; // Cycle through the texts
+        }
+        // Call the changeText function at a set interval to change the text periodically
+        setInterval(changeText, 1500);
+    </script>
+
+
+    <!-- ================================== Skill Section ================================= -->
+
+    <section id="skills">
+
+        <!-- Skills Section Heading -->
+        <h2>💻Skills</h2>
+        <div class="icon-img">
+
+            <!-- Java Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png"
+                    alt="Java Icon">
+                <h3 class="skills-card-name">Java</h3>
+            </div>
+
+            <!-- Spring Boot Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 200px;" src="Images\icons8-spring-boot-240.png"
+                    alt="SpringBoot Icon">
+                <h3 class="skills-card-name">Spring-Boot</h3>
+            </div>
+
+            <!-- Spring Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images/Spring Icon.png" alt="Hibernate Icon">
+                    <h3 class="skills-card-name">Spring</h3>
+            </div>
+
+            <!-- Hibernate Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-hibernate-128.png" alt="Hibernate Icon">
+                <h3 class="skills-card-name">Hibernate</h3>
+            </div>
+
+            <!-- JDBC Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 300px;" src="Images/JDBC.jpg" alt="MySQL Icon">
+                <h3 class="skills-card-name">JDBC</h3>
+            </div>
+            
+
+            <!-- MySQL Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 300px;" src="Images\icons8-mysql-240.png" alt="MySQL Icon">
+                <h3 class="skills-card-name">MySQL</h3>
+            </div>
+
+
+            <!-- JavaScript Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+                    alt="JavaScript Icon">
+                <h3 class="skills-card-name">JavaScript</h3>
+            </div>
+
+            <!-- HTML Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png"
+                    alt="HTML Icon">
+                <h3 class="skills-card-name">HTML</h3>
+            </div>
+
+            <!-- CSS Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png"
+                    alt="CSS Icon">
+                <h3 class="skills-card-name">CSS</h3>
+            </div>
+
+            <!-- DSA (Data Structures and Algorithms) Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-mind-map-128.png" alt="DSA Icon">
+                <h3 class="skills-card-name">DSA</h3>
+            </div>
+        </div>
+
+        <!-- ========== Tools ========= -->
+
+        <h2>Tech&Tools</h2>
+        <div class="icon-img">
+
+            <!-- Git Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png"
+                    alt="Git Icon">
+                <h3 class="skills-card-name">Git</h3>
+            </div>
+
+            <!-- Netlify Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 200px;" src="Images\netlify.png" alt="Netlify Icon">
+                <h3 class="skills-card-name">Netlify</h3>
+            </div>
+
+            <!-- Postman Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-postman-api-256.png" alt="Postman Icon">
+                <h3 class="skills-card-name">Postman</h3>
+            </div>
+
+            <!-- Visual Studio Code Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-visual-studio-code-2019-480.png" alt="VSCode Icon">
+                <h3 class="skills-card-name">VSCode</h3>
+            </div>
+
+            <!-- Swagger Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 200px;" src="Images\icons8-swagger-480.png"
+                    alt="Swagger Icon">
+                <h3 class="skills-card-name">Swagger</h3>
+            </div>
+
+            <!-- Tomcat Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-tomcat-480.png" alt="Tomcat Icon">
+                <h3 class="skills-card-name">Tomcat</h3>
+            </div>
+
+            <!-- Maven Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-maven-ios-100.png" alt="Maven Icon">
+                <h3 class="skills-card-name">Maven</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ================================== Project Section ====================================== -->
+
+
+
+
+    <section id="projects">
+        <h2>📱Projects</h2>
+        <div class="project-div">
+            <div class="project-card">
+                <img class="project-img" src="Images/Sweet LIght icon.png" alt="Project 2 image">
+                <h3 class="project-title">Sweet Delite</h3>
+                <p class="project-description">SweetDelight is an online Sweets and Bakery store that allows customers to browse through various Sweets & bakery products and place orders</p>
+
+                <div class="project-tech-stack">
+                    <div class="techstack">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images\icons8-mysql-240.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images/icons8-spring-boot-240.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images/react js icon.png" alt="">
+
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p id="user-detail-intro">An Aspiring Java Backend Development with 1200 hours
-                        of practical coding experience, strongly passionate
-                        about new technologies. Collaborative team player
-                        proficient in building efficient software solutions. He has
-                        excited to pursue his career by joining the company as a
-                        java developer.</p>
+                <a class="project-github-link" href="https://github.com/RADHIKESHS/frail-power-8560"
+                    target="_blank"><button class="button-33" role="button">GitHub</button>
+                </a>
+                <a class="project-deployed-link" href="https://drive.google.com/file/d/1yJXmLBAjvcGYhbeOWCGL6jSdBFCcrPZg/view"
+                    target="_blank"><button class="button-33" role="button">Deployed</button></a>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('tech-skills')">Technical Skills</p>
-                            <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="tech-skills">
-                            <ul>
-                                <li>Java<span></span><br></li>
-                                <li>SQL<span></span></li>
-                                <li>HTML<span></span></li>
-                                <li>CSS<span></span></li>
-                                <li>JavaScript<span></span></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents active-tab" id="soft-skills">
-                            <ul>
-                                <li>Decision Making<span></span></li>
-                                <li>Remote Collaboration<span></span></li>
-                                <li>Time Management<span></span></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents active-tab" id="education">
-                            <ul>
-                                <li><span>Java Backend Development(Full-Time)</span><br>Masai School<br>07/2022 -Present</li>
-                                <li><span>Bachelor of Commerce</span><br>Ram Lakhan Singh Yadav College, Bettiah<br>04/2018 - 07/2022</li>
-                                <li><span>Intermediate (I.COM)</span><br>Gulab Memorial College, Bettiah<br>04/2016 - 03/2018</li>
-                            </ul>
-                        </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="Images/Tender mangement system (1).jpg" alt="Project 2 image">
+                <h3 class="project-title">Tender management System</h3>
+                <p class="project-description">Application Software that is used for Bidding and Assign a Tender.</p>
+
+                <div class="project-tech-stack">
+                    <div class="techstack">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images\icons8-mysql-240.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images\icons8-database-96.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="">
+
+                    </div>
                 </div>
+                <a class="project-github-link" href="https://github.com/rahulmk19/dainty-swim-1179/tree/main/Tender_Management_System"
+                    target="_blank"><button class="button-33" role="button">GitHub</button>
+                </a>
+                <a class="project-deployed-link" href=""
+                    target="_blank"><button class="button-33" role="button">Deployed</button></a>
+
             </div>
-        </div>
+
+            <div class="project-card">
+                <img class="project-img" src="Images/Tripoto logo.png" alt="Project 1 image">
+                <h3 class="project-title">Tripoto Travells</h3>
+                <p class="project-description"> India's Largest Travel Community Website for
+                    booking hotels in the whole world.</p>
+
+                <div class="project-tech-stack">
+                    <div class="techstack">
+                        <img src="Images/html.png" alt="">
+                    </div>
+
+                    <div class="techstack">
+                        <img src="Images/css.gif" alt="">
+                    </div>
+
+                    <div class="techstack">
+                        <img src="Images/icons8-javascript-250.png" alt="">
+                    </div>
+
+                    <div class="techstack">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="">
+                    </div>
+
+                </div>
+                <a class="project-github-link"
+                    href="https://github.com/rahulmk19/prime-slope-6172"
+                    target="_blank">
+                    <button class="button-33" role="button">GitHub</button>
+                </a>
+
+                <a class="project-deployed-link" href="https://marvelous-biscotti-e90580.netlify.app/" target="_blank">
+                    <button class="button-33" role="button">Deployed</button>
+                </a>
+
+            </div>
+
+            <div class="project-card">
+                <img class="project-img" src="Images/Health cart logop.png" alt="Project 2 image">
+                <h3 class="project-title">HealthKart</h3>
+                <p class="project-description">E-commerce website for healthcare and fitness products.</p>
+
+                <div class="project-tech-stack">
+                    <div class="techstack">
+                        <img src="Images/html.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images/css.gif" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="Images/icons8-javascript-250.png" alt="">
+
+                    </div>
+                    <div class="techstack">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="">
+                    </div>
+
+                </div>
+                <a class="project-github-link" href="https://github.com/abhaysri05/hard-hole-4225"
+                    target="_blank"><button class="button-33" role="button">GitHub</button>
+                </a>
+                <a class="project-deployed-link" href="https://merry-cajeta-c250f2.netlify.app/index.html"
+                    target="_blank"><button class="button-33" role="button">Deployed</button></a>
+
+            </div>
+
+            <div>
+    </section>
+
+    <!-- ================================================================================================ -->
+
+    <div class="react-activity-calendar calendar">
+
     </div>
-    
-<!-- ------------------------------------------Skills--------------------------------------------- -->
-
-<div id="skills" class="skills-card">
-    <div class="container">
-        <h1 class="sub-title">Skills</h1>
-        <div class="services-list">
-            <div>
-                <img src="./Data/icons8-java.gif">
-                <h3>JAVA</h3>
-            </div>
-            <div>
-                <img src="./Data/icons8-database.gif">
-                <h3>MySql</h3>
-            </div>
-            <div>
-                <img src="./Data/icons8-html-filetype.gif">
-                <h3>HTML</h3>
-            </div>
-            <div>
-                <img src="./Data/css.gif">
-                <h3>CSS</h3>
-            </div>
-            <div>
-                <img src="./Data/icons8-javascript.gif">
-                <h3>JavaScript</h3>
-            </div>
-            <div>
-                <img src="./Data/github.gif">
-                <h3>GitHub</h3>
-            </div>
-            <div>
-                <img src="./Data/how-to-use-STS.gif">
-                <h3>Spring Tool Suite</h3>
-            </div>
-            <div>
-                <img src="./Data/netlify.png">
-                <h3>Netlify</h3>
-            </div>
-
-            <!-- <div>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis aliquam eius reprehenderit doloribus temporibus omnis aspernatur est consequuntur repudiandae,
-                     at, eaque nisi vero architecto exercitationem corrupti iste nemo cum unde?</p>
-                     <a href="#">learn more</a>
-            </div> -->
+    <div class="git">
+        <div class="github-streak">
+            <img class="git-img" id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=rahulmk19&theme=dark"
+                alt="GitHub Streak Stats">
         </div>
+
+        <div class="github-top">
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulmk19&layout=compact&theme=dark"
+                alt="GitHub Top Languages">
+        </div>
+
+        <div class="github-stats">
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=rahulmk19&show_icons=true&theme=dark"
+                alt="GitHub Stats Card">
+        </div>
+
     </div>
 
 </div>
 
 
-<!-- -----------------------------------Project----------------------------------------------------- -->
-<div id="projects" class="project-title">
-    <div class="container">
-        <h1 class="sub-title">My Project</h1>
-        <div class="work-list">
-            <div class="work project-title">
-                <img src="./Data/Health cart logop.png">
-                <div class="layer">
-                    <h3>HeathKart</h3>
-                    <p>E-commerce website for healthcare and fitness products.</p>
-                    <h3 class="project-tech-stack">HTML | CSS | JavaScript</h3>
-                    <a href="https://github.com/abhaysri05/hard-hole-4225" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://merry-cajeta-c250f2.netlify.app/index.html" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
-                </div>
+
+    <!-- ================================================================================================ -->
+
+
+    <section id="contact" class="contact section">
+        <h2>📧Contact Me</h2>
+        <div class="con">
+            <div class="contact-div-form">
+                <form action="https://formspree.io/f/xgebjkoy" method="post" class="contact__form" id="contact-form">
+                    <input type="text" placeholder="Name" class="contact__input" id="name-input" name="name"
+                        autocomplete="off" required>
+                    <input type="email" placeholder="Email" class="contact__input" id="email-input" name="email"
+                        autocomplete="off" required>
+                    <textarea name="message" id="message-input" cols="0" rows="10" class="contact__input"
+                        autocomplete="off" required></textarea>
+                    <input type="submit" value="Submit" class="contact__button button">
+                </form>
             </div>
-            <div class="work project-title">
-                <img src="./Data/Tripoto logo.png">
-                <div class="layer">
-                    <h3>Tripoto</h3>
-                    <p>India's Largest Travel Community Website for booking hotels in the whole world.</p>
-                    <h3 class="project-tech-stack">HTML | CSS | JavaScript</h3>
-                    <a href="https://github.com/rahulmk19/prime-slope-6172" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://marvelous-biscotti-e90580.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+
+            <div id="contact-social">
+                <div class="github-icon-contact animated">
+                    <img src="Images\icons8-github-48.png" alt="">
+                    <a style="color: black;" id="contact-github" href="https://github.com/rahulmk19" target="_blank">
+                        <p class="line">GitHub</p>
+                    </a>
                 </div>
-            </div>
-            <div class="work project-title">
-                <img src="./Data/Tender mangement system (1).jpg">
-                <div class="layer">
-                    <h3>HeathKart</h3>
-                    <p>E-commerce website for healthcare and fitness products.</p>
-                    <h3 class="project-tech-stack">HTML | CSS | JavaScript</h3>
-                    <a href="https://github.com/rahulmk19/dainty-swim-1179/tree/main/Tender_Management_System" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://merry-cajeta-c250f2.netlify.app/index.html" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+
+                <div class="github-icon-contact animated">
+                    <img src="Images\icons8-linkedin-60.png" alt="">
+                    <a style="color: black;" id="contact-linkedin"
+                        href="https://www.linkedin.com/in/rahulmk19/" target="_blank">
+                        <p class="line">LinkedIn</p>
+                    </a>
                 </div>
-            </div>
-            <div class="work project-title" id="project-img">
-                <img src="./Data/Tripoto logo.png">
-                <div class="layer" >
-                    <h3>Tripoto</h3>
-                    <p>India's Largest Travel Community Website for booking hotels in the whole world.</p>
-                    <h3 class="project-tech-stack">HTML | CSS | JavaScript</h3>
-                    <a href="https://github.com/rahulmk19/prime-slope-6172" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://marvelous-biscotti-e90580.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+
+                <div class="github-icon-contact animated">
+                    <img src="Images/icons8-phone-50.png" alt="">
+                    <p id="contact-phone"><a style="color: black;" href="tel:+917667869850"
+                            target="_blank">+91 7667 869 850</a></p>
                 </div>
+
+
+                <div class="github-icon-contact animated">
+                    <img src="Images/icons8-email-64.png" alt="">
+                    <p id="contact-email"><a style="color: black;" href="mailto:rahulmk.94802@gmail.com"
+                            target="_blank">rahulmk.94802@gmail.com</a></p>
+                </div>
+
             </div>
         </div>
+    </section>
+
+
+    <script>
+        window.onpageshow = function (event) {
+            if (event.persisted) {
+                // Clear form fields
+                document.getElementById("name-input").value = "";
+                document.getElementById("email-input").value = "";
+                document.getElementById("message-input").value = "";
+            }
+        };
+    </script>
+
+
+    <!-- footer -->
+    <div style="text-align: center;" class="foot">
+        <p> © 2023 Rahul Kumar Thakur</p>
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- ------------------------------------------Contact-------------------------------------------------- -->
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left" id="contact-linkedin">
-                <h1 class="sub-title">Contact Me</h1>
-                <p id="contact-email"><i class="fa-solid fa-envelope"></i>   rahulmk.94802@gmail.com</p>
-                <p id="contact-phone"><i class="fa-solid fa-phone"></i>  +91 7667869850</p>
-                <div class="social-icons" id="contact-github">
-                    <a href="https://github.com/rahulmk19"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rahulmk19/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Write Your Message If You Have Any Query"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg" style="margin: 10px 0 30px;"></span>
-        </div>
-    </div>
-    <!-- <div class="copyright">
-        <p>copyright @ Rahul. <i class="fa-solid fa-heart"></i></p>
-    </div> -->
-</div>
-
-<!-- ------------------------------------------Github------------------------- -->
-<div class="github">
-    <div>
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-           
-        </div> 
-    </div>
-    
-    
-    <div id="githubstats" class="react-activity-calendar">
-        <div>
-          <img id="github-stats-card"
-          src="https://github-readme-stats.vercel.app/api?username=rahulmk19&show_icons=true&theme=merko"
-          alt="top_languages" />
-        </div>
-        <div>
-          <img id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=rahulmk19&theme=merko" alt="">
-        </div>
-        <div>
-          <img id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulmk19&layout=compact&theme=merko"
-          alt="top_languages" />
-        </div>
-      </div>
-</div>
-
 
 </body>
+
 </html>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+
+
+<script>
+    // Function to toggle between dark and light themes
+    function toggleTheme() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-theme');
+        body.classList.toggle('light-theme');
+    }
+
+    // Event listener for theme toggle button
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    themeToggleBtn.addEventListener('click', toggleTheme);
+
 </script>
-<script src="./index.js"></script>
+
+
+
 <script>
     GitHubCalendar(".calendar", "rahulmk19");
 
-    // or enable responsive functionality:
     GitHubCalendar(".calendar", "rahulmk19", { responsive: true });
 </script>
