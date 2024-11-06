@@ -1065,8 +1065,6 @@
  
  
   .contact {
- 
- 
     padding: 50px 0;
     text-align: center;
   }
@@ -1122,7 +1120,7 @@
     border-radius: 4px;
   }
  
-  .contact__button {
+  /* .contact__button {
     background-color: #d84b75;
  
     color: #fff;
@@ -1130,7 +1128,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+  } */
  
   .contact__button:hover {
     background-color: #d406c3;
@@ -1195,11 +1193,7 @@
  
   }
  
- 
- 
- 
   /* ================================= */
- 
  
  
   .line :hover {
@@ -1306,14 +1300,6 @@
  }
  
  
- 
- 
- 
- 
- 
- 
- 
- 
   .foot {
     color: white;
   }
@@ -1326,13 +1312,7 @@
     color: var(--text-color-dark);
   }
  
- 
- 
- 
- 
- 
- 
- 
+
   @media (max-width: 280px) {
     .react-activity-calendar.calendar {
       /* CSS rules for Galaxy Fold or any other desired behavior at this width */

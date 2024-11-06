@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /> -->
 
+    <!-- GitHub Calendar CSS (optional for styling) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    
+    <!-- GitHub Calendar JavaScript -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
     <!-- <link rel="stylesheet" href="Style.css/index.css"> -->
     <link rel="stylesheet" href="style.css">
@@ -47,7 +52,7 @@
                 <li class="nav-item"><a class="nav-link skills" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link projects" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link contact" href="#contact">Contact</a></li>
-                <li class="nav-item" id="resume-button-1"><a class="nav-link resume" id="resume-link-1" href="/Rahul_Kumar Thakur_Resume.pdf"
+                <li class="nav-item" id="resume-button-1"><a class="nav-link resume" id="resume-link-1" href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=670eac777ca4c4119e5c0f73"
                         download target="_blank"
                         onclick="setTimeout(function(){ window.open('//drive.google.com/drive/u/0/folders/1fq4Z0LEE0wQWK7IHMdOc7D1xyZ7GIvfa'); }, 100);">Resume</a>
                 </li>
@@ -75,8 +80,8 @@
                     I'm Rahul Kumar Thakur</p>
                 <p id="user-detail-in">Full Stack Java Developer.</p>
                 <!-- Download Resume Button -->
-                <a id="resume-link-2" href="/Rahul_Kumar Thakur_Resume.pdf" download target="_blank"
-                    onclick="setTimeout(function(){ window.open('https://drive.google.com/drive/u/0/folders/1fq4Z0LEE0wQWK7IHMdOc7D1xyZ7GIvfa'); }, 100);">Download
+                <a id="resume-link-2" href="/RahulKumarThakur-JavaBackendDeveloper-kth1.pdf" download target="_blank"
+                    onclick="setTimeout(function(){ window.open('https://resume-builder-test-new.masaischool.com/resume/public?resumeId=670eac777ca4c4119e5c0f73'); }, 100);">Download
                     Resume</a>
             </div>
             <!-- User Image -->
@@ -103,9 +108,12 @@
                 <!-- About Introduction -->
                 <h1 id="myText">😊 Know Me</h1>
                 <p id="user-detail-intro">
-                    An Aspiring Java Backend Development with 1200 hours of practical coding experience, strongly passionate
-                     about new technologies. Collaborative team player proficient in building efficient software solutions. 
-                     He has excited to pursue his career by joining the company as a java developer.
+                    Skilled Java Backend Developer with a proven track record in developing and optimizing robust 
+                    backend systems using Java, Spring Boot, and RESTful APIs. Skilled in leveraging Generative AI 
+                    for rapid adaptation to new technologies, with a strong focus on server performance optimization 
+                    and seamless integration across teams. Experienced in database management and performance tuning
+                     to support scalable, efficient data handling. Committed to delivering high-quality,
+                      backend solutions that align with modern industry standards and emerging technologies.
                 </p>
             </div>
         </div>
@@ -156,7 +164,7 @@
 
             <!-- Spring Skill Card -->
             <div class="skills-card">
-                <img class="skills-card-img" src="Images/Spring Icon.png" alt="Hibernate Icon">
+                <img style="padding-top: 20px;"; class="skills-card-img" src="Images/Spring Icon.png" alt="Hibernate Icon">
                     <h3 class="skills-card-name">Spring</h3>
             </div>
 
@@ -166,13 +174,25 @@
                 <h3 class="skills-card-name">Hibernate</h3>
             </div>
 
+            <!-- Maven Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="Images\icons8-maven-ios-100.png" alt="Maven Icon">
+                <h3 class="skills-card-name">Maven</h3>
+            </div>
+
             <!-- JDBC Skill Card -->
             <div class="skills-card">
                 <img class="skills-card-img" style="width: 300px;" src="Images/JDBC.jpg" alt="MySQL Icon">
                 <h3 class="skills-card-name">JDBC</h3>
             </div>
-            
 
+            <!-- MongoDb Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" src="/Images/icons8-mongodb-240.png" alt="Mongo Icon">
+                <h3 class="skills-card-name">MongoDB</h3>
+            </div>
+
+            
             <!-- MySQL Skill Card -->
             <div class="skills-card">
                 <img class="skills-card-img" style="width: 300px;" src="Images\icons8-mysql-240.png" alt="MySQL Icon">
@@ -183,9 +203,17 @@
             <!-- JavaScript Skill Card -->
             <div class="skills-card">
                 <img class="skills-card-img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+                    src="/Images/js-icon.png"
                     alt="JavaScript Icon">
                 <h3 class="skills-card-name">JavaScript</h3>
+            </div>
+
+            <!-- C++ Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img"
+                    src="/Images/C++.png"
+                    alt="C++ Icon">
+                <h3 class="skills-card-name">C++</h3>
             </div>
 
             <!-- HTML Skill Card -->
@@ -204,7 +232,7 @@
 
             <!-- DSA (Data Structures and Algorithms) Skill Card -->
             <div class="skills-card">
-                <img class="skills-card-img" src="Images\icons8-mind-map-128.png" alt="DSA Icon">
+                <img class="skills-card-img" src="/Images/dsa.jpeg" alt="DSA Icon">
                 <h3 class="skills-card-name">DSA</h3>
             </div>
         </div>
@@ -219,6 +247,13 @@
                 <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png"
                     alt="Git Icon">
                 <h3 class="skills-card-name">Git</h3>
+            </div>
+
+            <!-- STS Skill Card -->
+            <div class="skills-card">
+                <img class="skills-card-img" style="width: 200px;" src="/Images/Spring_Tool_Suite.png"
+                    alt="STS Icon">
+                <h3 class="skills-card-name">STS</h3>
             </div>
 
             <!-- Netlify Skill Card -->
@@ -246,17 +281,6 @@
                 <h3 class="skills-card-name">Swagger</h3>
             </div>
 
-            <!-- Tomcat Skill Card -->
-            <div class="skills-card">
-                <img class="skills-card-img" src="Images\icons8-tomcat-480.png" alt="Tomcat Icon">
-                <h3 class="skills-card-name">Tomcat</h3>
-            </div>
-
-            <!-- Maven Skill Card -->
-            <div class="skills-card">
-                <img class="skills-card-img" src="Images\icons8-maven-ios-100.png" alt="Maven Icon">
-                <h3 class="skills-card-name">Maven</h3>
-            </div>
 
         </div>
 
@@ -292,7 +316,7 @@
 
                     </div>
                     <div class="techstack">
-                        <img src="Images/react js icon.png" alt="">
+                        <img src="/Images/React-icon.png" alt="">
 
                     </div>
                 </div>
@@ -319,12 +343,11 @@
 
                     </div>
                     <div class="techstack">
-                        <img src="Images\icons8-database-96.png" alt="">
-
+                        <img src="/Images/JDBC.jpg" alt="">
                     </div>
+
                     <div class="techstack">
                         <img src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png" alt="">
-
                     </div>
                 </div>
                 <a class="project-github-link" href="https://github.com/rahulmk19/dainty-swim-1179"
@@ -347,11 +370,11 @@
                     </div>
 
                     <div class="techstack">
-                        <img src="Images/css.gif" alt="">
+                        <img src="/Images/icons8-css-240.png" alt="">
                     </div>
 
                     <div class="techstack">
-                        <img src="Images/icons8-javascript-250.png" alt="">
+                        <img src="/Images/javascript-icon-250.png" alt="">
                     </div>
 
                     <div class="techstack">
@@ -382,11 +405,11 @@
 
                     </div>
                     <div class="techstack">
-                        <img src="Images/css.gif" alt="">
+                        <img src="/Images/icons8-css-240.png" alt="">
 
                     </div>
                     <div class="techstack">
-                        <img src="Images/icons8-javascript-250.png" alt="">
+                        <img src="/Images/javascript-icon-250.png" alt="">
 
                     </div>
                     <div class="techstack">
@@ -413,7 +436,7 @@
     <div class="git">
         <div class="github-streak">
             <img class="git-img" id="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com?user=rahulmk19&theme=dark"
+                src="https://github-readme-streak-stats.herokuapp.com?user=rahulmk19&theme=dark&cache=1"
                 alt="GitHub Streak Stats">
         </div>
 
@@ -462,7 +485,7 @@
                 </div>
 
                 <div class="github-icon-contact animated">
-                    <img src="Images\icons8-linkedin-60.png" alt="">
+                    <img src="/Images/icons8-linkedin-240.png" alt="">
                     <a style="color: black;" id="contact-linkedin"
                         href="https://www.linkedin.com/in/rahulmk19/" target="_blank">
                         <p class="line">LinkedIn</p>
@@ -470,14 +493,14 @@
                 </div>
 
                 <div class="github-icon-contact animated">
-                    <img src="Images/icons8-phone-50.png" alt="">
+                    <img src="/Images/icons8-phone-144.png" alt="">
                     <p id="contact-phone"><a style="color: black;" href="tel:+917667869850"
                             target="_blank">+91 7667 869 850</a></p>
                 </div>
 
 
                 <div class="github-icon-contact animated">
-                    <img src="Images/icons8-email-64.png" alt="">
+                    <img src="/Images/icons8-gmail-240.png" alt="">
                     <p id="contact-email"><a style="color: black;" href="mailto:rahulmk.94802@gmail.com"
                             target="_blank">rahulmk.94802@gmail.com</a></p>
                 </div>
@@ -485,19 +508,6 @@
             </div>
         </div>
     </section>
-
-<!-- 
-    <script>
-        window.onpageshow = function (event) {
-            if (event.persisted) {
-                // Clear form fields
-                document.getElementById("name-input").value = "";
-                document.getElementById("email-input").value = "";
-                document.getElementById("message-input").value = "";
-            }
-        };
-    </script> -->
-
 
     <!-- footer -->
     <div style="text-align: center;" class="foot">
